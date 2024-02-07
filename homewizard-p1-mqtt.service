@@ -1,0 +1,14 @@
+[Unit]
+Description=Poll HomeWizard and publish to MQTT
+After=network.target mosquitto.service
+Wants=mosquitto.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=30
+ExecStart=/usr/local/bin/homewizard-p1-mqtt.pl -config=/usr/local/etc/homewizard-p1-mqtt.conf
+
+[Install]
+WantedBy=multi-user.target
