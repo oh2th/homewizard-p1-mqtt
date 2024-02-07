@@ -50,7 +50,7 @@ Note! the password is not encrypted and is sent in the clear as SSL is not imple
 
 ## The JSON messages sent to the broker
 
-The script sends every retrieved data JSON as-is to the given MQTT topic. It also calculates energy import / export from the previous value. Useful for InfluxDB/Grafana usage for time series data. For every total_power_(import|export)(_t1|_t2|_t3|_t4)_kwh a interval_power_(import|export)(_t1|_t2|_t3|_t4)_w is evaluated. This is the amount of watts imported or exported since the last known good value. This allows for any interval to be used.
+The script sends every retrieved data JSON as-is to the given MQTT topic. It also calculates energy import / export from the previous value. Useful for InfluxDB/Grafana usage for time series data. For every total_power_(import|export)(_t1|_t2|_t3|_t4)\_kwh a interval_power_(import|export)(_t1|_t2|_t3|_t4)\_w is evaluated. This is the amount of watts imported or exported since the last known good value. This allows for any interval to be used.
 
 ### Sample JSON message sent to the topic
 
