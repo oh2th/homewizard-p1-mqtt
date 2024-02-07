@@ -11,7 +11,7 @@ Poll the HomeWizard P1 local API and publish the data JSON to a MQTT topic.
 ## Software prerequisites
 
 - Some MQTT broker like Mosquitto running somewhere.
-- Perl libraries Net::MQTT::Simple, JSON::PP, Async::Event::Interval
+- Perl libraries LWP::UserAgent, Net::MQTT::Simple, JSON::PP
 
 ## Configure the P1 Meter
 
