@@ -5,7 +5,7 @@ Poll the HomeWizard P1 local API and publish the data JSON to a MQTT topic.
 
 ## Hardware prerequisites
 
-- [Energymeter with P1 (HAN) -port](https://ruuvi.com/)
+- Energymeter with P1 (HAN) -port
 - [HomeWizard Wi-fi P1 Meter](https://www.homewizard.com/)
 
 ## Software prerequisites
